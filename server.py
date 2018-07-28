@@ -9,7 +9,7 @@ DEBUG = os.environ.get('DEBUG', True)
 
 @app.route('/')
 async def home(request: Request):
-    return JsonResponse({'hello': 'world'})
+    return JsonResponse({'server': 'vibora'})
 
 
 if __name__ == '__main__':
