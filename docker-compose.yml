@@ -1,0 +1,12 @@
+version: "3.3"
+services:
+    web:
+        build: ./
+        stop_grace_period: 3s
+        image: vibora:latest
+
+        ports:
+        - "8000:8000"
+
+        volumes:
+        - .:/app
